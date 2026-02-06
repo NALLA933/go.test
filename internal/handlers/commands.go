@@ -71,6 +71,14 @@ func (b *Bot) handleCommand(msg *tgbotapi.Message) {
 		b.cmdLockList(msg)
 	case "resetshop":
 		b.cmdResetShop(msg)
+	case "upload":
+		b.cmdUpload(msg)
+	case "delete":
+		b.cmdDelete(msg)
+	case "update":
+		b.cmdUpdate(msg)
+	case "stats":
+		b.cmdStats(msg)
 	}
 }
 
